@@ -1,0 +1,41 @@
+label {
+  display: block;
+  /* This value is a personal preference for spacing. */
+  margin: 0 0.5rem;
+}
+input:not([type='checkbox'], [type='radio']),
+textarea,
+select {
+  display: block;
+  /* Change the height and size (padding) to match your aesthetic. */
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+  margin: 0.25rem 0;
+}
+/* Also consider a hover state. It's less common but still cool. */
+input:focus,
+textarea:focus,
+select:focus {
+  /* This is my personal choice of blue as a base theme color. */
+  border-color: #146eeb;
+}
+textarea {
+  /* I prefer to not let people resize textareas. I never use that feature. */
+  resize: none;
+  height: auto;
+  line-height: 1.15;
+}
+/* Checkboxes */
+.checkbox-label {
+  display: flex;
+  /* Get the box vertically aligned with the label. */
+  align-items: center;
+}
+input[type='checkbox'] {
+  /* Add space between the box and the label */
+  margin-right: 0.5rem;
+}

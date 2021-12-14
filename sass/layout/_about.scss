@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as v;
+
+.about-points {
+  line-height: 162%;
+  letter-spacing: -0.01em;
+}
+
+.about-point {
+  margin-bottom: 1.5rem;
+}
+
+.point-title {
+  background: v.$very-pale-red;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+  margin-bottom: 1rem;
+  span {
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+  b {
+    line-height: 1.5rem;
+    color: v.$dark-blue;
+  }
+}
+
+.numbers {
+  padding: 0.75rem 1.5rem;
+  background: v.$bright-red;
+  border-radius: 1.25rem;
+  color: v.$very-light-gray;
+}

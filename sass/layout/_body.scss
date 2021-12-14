@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as v;
+
+body {
+  background-image: url(./images/bg-mobile.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: v.$medium) {
+  body {
+    overflow-x: hidden;
+  }
+}

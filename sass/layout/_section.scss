@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as v;
+
+.section-article {
+  margin-bottom: 0;
+  grid-row: 2;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 2.125rem;
+    margin-top: 1rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: v.$dark-blue;
+  }
+
+  p {
+    margin-bottom: 2.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: v.$dark-grayish-blue;
+  }
+
+  button {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.section-about {
+  margin: 1.5rem 0;
+  text-align: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.875em;
+    line-height: 2.75rem;
+    letter-spacing: -2%;
+    color: v.$dark-blue;
+  }
+
+  p {
+    line-height: 162%;
+    letter-spacing: -0.01em;
+    color: v.$dark-grayish-blue;
+  }
+}

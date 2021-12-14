@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500;600;700;800&display=swap");
+/* Buttons */
+/* Base */
+.button,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Be Vietnam", sans-serif;
+  line-height: 1.15;
+  letter-spacing: 0.025rem;
+  border: none;
+  border-radius: 1.375rem;
+  background-color: #f25f3a;
+  box-shadow: 0px 5px 7px rgba(243, 96, 60, 0.5);
+  color: #fafafa;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  width: 8.625rem;
+  height: 2.75rem;
+  margin: 0 0.5rem 0.75rem 0;
+}
+
+/* Hover and focus */
+button:hover,
+.button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+button:focus,
+.button:focus,
+input[type=submit]:focus,
+input[type=reset]:focus,
+input[type=button]:focus {
+  text-decoration: none;
+  color: #f98f75;
+}
+
+.text-gray {
+  color: #9095a7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-left {
+  margin-left: 10.313rem;
+}
+
+label {
+  display: block;
+  /* This value is a personal preference for spacing. */
+  margin: 0 0.5rem;
+}
+
+input:not([type=checkbox], [type=radio]),
+textarea,
+select {
+  display: block;
+  /* Change the height and size (padding) to match your aesthetic. */
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+  margin: 0.25rem 0;
+}
+
+/* Also consider a hover state. It's less common but still cool. */
+input:focus,
+textarea:focus,
+select:focus {
+  /* This is my personal choice of blue as a base theme color. */
+  border-color: #146eeb;
+}
+
+textarea {
+  /* I prefer to not let people resize textareas. I never use that feature. */
+  resize: none;
+  height: auto;
+  line-height: 1.15;
+}
+
+/* Checkboxes */
+.checkbox-label {
+  display: flex;
+  /* Get the box vertically aligned with the label. */
+  align-items: center;
+}
+
+input[type=checkbox] {
+  /* Add space between the box and the label */
+  margin-right: 0.5rem;
+}
+
+/* Basic text */
+/* These values are a personal preference. */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5rem 0;
+  /* Personally, I prefer lightweight headings. */
+  font-weight: 300;
+}
+
+p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 400;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  /* This color is a personal preference. */
+  color: #146eeb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0.5rem 0 1rem;
+  padding-inline-start: 2rem;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+.navbar {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: #1d1e25;
+}
+.navbar a:hover {
+  color: #9095a7;
+}
+
+.button-nav {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+.menu a {
+  margin-right: 1em;
+}
+.menu a:last-child {
+  margin-right: 0;
+}
+
+#hamburer {
+  display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: inline;
+  }
+
+  .button-nav {
+    display: inline;
+  }
+
+  #hamburger {
+    display: none;
+  }
+}
+body {
+  background-image: url(./images/bg-mobile.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.container-content {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 0.8fr));
+  grid-auto-rows: max-content;
+}
+.container-content h2 {
+  font-weight: 700;
+  color: #242d52;
+}
+
+.container-content-about {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 0.91fr));
+  grid-auto-rows: max-content;
+}
+
+.main-section {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  place-items: center;
+}
+
+.illustration-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1;
+}
+.illustration-intro img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-article {
+  margin-bottom: 0;
+  grid-row: 2;
+  text-align: center;
+}
+.section-article h1 {
+  margin-bottom: 2.125rem;
+  margin-top: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #242d52;
+}
+.section-article p {
+  margin-bottom: 2.625rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #9095a7;
+}
+.section-article button {
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.section-about {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.section-about h2 {
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 2.75rem;
+  letter-spacing: -2%;
+  color: #242d52;
+}
+.section-about p {
+  line-height: 162%;
+  letter-spacing: -0.01em;
+  color: #9095a7;
+}
+
+.about-points {
+  line-height: 162%;
+  letter-spacing: -0.01em;
+}
+
+.about-point {
+  margin-bottom: 1.5rem;
+}
+
+.point-title {
+  background: #ffefeb;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+  margin-bottom: 1rem;
+}
+.point-title span {
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.point-title b {
+  line-height: 1.5rem;
+  color: #242d52;
+}
+
+.numbers {
+  padding: 0.75rem 1.5rem;
+  background: #f25f3a;
+  border-radius: 1.25rem;
+  color: #fafafa;
+}
+
+.card-testimonials {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+img {
+  max-width: 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.card-background {
+  background: #fafafa;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -2rem;
+}
+.card-text b {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.card-text p {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #9095a7;
+}
+
+.attribution {
+  display: none;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.attribution a {
+  color: #fafafa;
+}
+
+/*# sourceMappingURL=style.css.map */

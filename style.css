@@ -394,11 +394,14 @@ body {
   }
 
   .about-point p {
-    margin-left: 4.5rem;
+    margin-left: 6.25rem;
   }
 
   .point-title {
     background: transparent;
+  }
+  .point-title b {
+    padding-left: 2rem;
   }
 
   .container-content-about {

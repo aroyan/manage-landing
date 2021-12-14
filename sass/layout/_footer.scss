@@ -41,6 +41,15 @@ footer {
   }
 }
 
+.col-1-desktop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .footer-form {
   display: flex;
   align-items: center;
@@ -94,4 +103,28 @@ footer {
 .copyright {
   color: v.$dark-grayish-blue;
   order: -1;
+}
+
+@media screen and (min-width: v.$large) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.25rem;
+    padding: 2rem 0;
+  }
+
+  .copyright {
+    order: initial;
+    width: 100%;
+    margin-top: -4.375rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: end;
+  }
+
+  .col-1-desktop {
+    gap: 5.5rem;
+  }
 }

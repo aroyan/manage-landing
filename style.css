@@ -550,6 +550,15 @@ footer form button {
   margin-left: 0.5rem;
 }
 
+.col-1-desktop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .footer-form {
   display: flex;
   align-items: center;
@@ -600,6 +609,30 @@ footer form button {
 .copyright {
   color: #9095a7;
   order: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.25rem;
+    padding: 2rem 0;
+  }
+
+  .copyright {
+    order: initial;
+    width: 100%;
+    margin-top: -4.375rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: end;
+  }
+
+  .col-1-desktop {
+    gap: 5.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

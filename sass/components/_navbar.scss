@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+
+.navbar {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: v.$very-dark-blue;
+    &:hover {
+      color: v.$dark-grayish-blue;
+    }
+  }
+}
+
+.button-nav {
+  display: none;
+}
+
+.menu {
+  display: none;
+  a {
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+#hamburer {
+  display: inline;
+}
+
+@media screen and (min-width: v.$medium) {
+  .menu {
+    display: inline;
+  }
+
+  .button-nav {
+    display: inline;
+  }
+
+  #hamburger {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.container-content {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 0.8fr));
+  grid-auto-rows: max-content;
+
+  h2 {
+    font-weight: 700;
+    color: v.$dark-blue;
+  }
+}
+
+.container-content-about {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 0.91fr));
+  grid-auto-rows: max-content;
+}

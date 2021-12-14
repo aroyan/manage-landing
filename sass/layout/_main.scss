@@ -1,0 +1,16 @@
+.main-section {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  place-items: center;
+}
+
+.illustration-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}

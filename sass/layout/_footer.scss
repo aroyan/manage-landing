@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as v;
+
+.attribution {
+  display: none;
+  font-size: 0.75rem;
+  text-align: center;
+  a {
+    color: v.$very-light-gray;
+  }
+}

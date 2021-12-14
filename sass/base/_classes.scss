@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as v;
+
+.text-gray {
+  color: v.$dark-grayish-blue;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-left {
+  margin-left: 10.313rem;
+}

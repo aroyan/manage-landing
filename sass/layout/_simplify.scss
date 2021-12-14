@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as v;
+
+.simplify-section {
+  background: v.$bright-red;
+  padding: 4rem 2.25rem;
+
+  h2 {
+    color: v.$very-pale-red;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  > button {
+    margin: 1rem auto;
+    background: v.$very-pale-red;
+    color: v.$bright-red;
+    font-weight: 700;
+
+    &:hover {
+      background: v.$very-light-gray;
+    }
+  }
+}
+
+@media screen and (min-width: v.$medium) {
+  .simplify-section {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      max-width: 30rem;
+      text-align: start;
+    }
+    button {
+      align-self: flex-start;
+      justify-self: flex-end;
+      margin: 1rem 0 0;
+    }
+  }
+}

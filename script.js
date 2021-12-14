@@ -1,10 +1,10 @@
 const hamburger = document.getElementById('hamburger');
-const menu = document.getElementsByClassName('menu');
+const menu = document.getElementById('testnav');
 
-hamburger.addEventListener('click', {
-  handleEvent: function (e) {
-    //Some Function to show up menu
-    console.log('Kusam');
-    alert('Hi there');
-  },
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
 });
+
+function ohhh() {
+  menu.classList.toggle('show');
+}

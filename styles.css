@@ -9,26 +9,57 @@
   --very-light-gray: hsl(0, 0%, 98%);
 }
 
+/*
+Reset CSS
+*/
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Be Vietnam', sans-serif;
-  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-p {
+p,
+a {
+  font-family: 'Be Vietnam', sans-serif;
   font-size: 1em;
 }
 
-.attribution {
-  display: none;
-  font-size: 11px;
-  text-align: center;
+/*
+Universal Style i.e Button
+*/
+
+button {
+  width: 137px;
+  height: 44px;
+  background: var(--bright-red);
+  /* Drop Shadow Orange */
+  box-shadow: 0px 5px 7px rgba(243, 96, 60, 0.5);
+  border-radius: 22px;
+  color: var(--very-light-gray);
+  border: none;
 }
 
-.attribution a {
-  color: var(--very-light-gray);
+button:hover {
+  background: #f98f75;
 }
+
+body {
+  background-image: url(images/bg-mobile.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.text-gray {
+  color: var(--dark-grayish-blue);
+}
+
+/*
+Mobile Viewport
+*/
 
 .navbar {
   height: 100px;
@@ -45,21 +76,6 @@ p {
 
 .navbar a:hover {
   color: var(--dark-grayish-blue);
-}
-
-button {
-  width: 137px;
-  height: 44px;
-  background: var(--bright-red);
-  /* Drop Shadow Orange */
-  box-shadow: 0px 5px 7px rgba(243, 96, 60, 0.5);
-  border-radius: 22px;
-  color: var(--very-light-gray);
-  border: none;
-}
-
-button:hover {
-  background: #f98f75;
 }
 
 .button-nav {
@@ -82,17 +98,168 @@ button:hover {
   display: inline;
 }
 
+.container {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.container-content {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 0.8fr));
+  grid-auto-rows: max-content;
+}
+
+.container-content-about {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 0.91fr));
+  grid-auto-rows: max-content;
+}
+
 .main-section {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  place-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.illustration-intro img {
+  width: 100%;
+  max-width: 316px;
+  margin: 16px 0;
+}
+
+.illustration-intro {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1;
+}
+
+.margin-left {
   margin-left: 165px;
 }
 
-figure img {
-  max-width: 545px;
-  max-height: 475px;
+.section-article {
+  margin-bottom: 0;
+  grid-row: 2;
+  text-align: center;
+}
+
+.section-article h1 {
+  margin-bottom: 34px;
+  margin-top: 16px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.section-article p {
+  margin-bottom: 42px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.section-article button {
+  margin-bottom: 24px;
+}
+
+.section-about {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.section-about h2 {
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 44px;
+  letter-spacing: -2%;
+}
+
+.section-about p {
+  line-height: 162%;
+  letter-spacing: -0.01em;
+}
+
+.about-points {
+  line-height: 162%;
+  letter-spacing: -0.01em;
+}
+
+.about-point {
+  margin-bottom: 24px;
+}
+
+.point-title {
+  background-color: var(--very-pale-red);
+  padding: 8px 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.point-title span,
+b {
+  line-height: 23px;
+}
+
+.numbers {
+  padding: 12px 24px;
+  background-color: var(--bright-red);
+  border-radius: 20px;
+  color: var(--very-light-gray);
+}
+.main-section .card-testimonials img {
+  max-width: 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.card-testimonials {
+  display: flex;
+}
+
+.card-background {
+  height: 70%;
+  background-color: aquamarine;
+  position: relative;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-text b {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.card-text p {
+  margin-bottom: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--very-light-gray);
 }
 
 @media screen and (min-width: 765px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .menu {
     display: inline;
   }

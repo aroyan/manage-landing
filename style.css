@@ -255,26 +255,27 @@ body {
   display: grid;
   place-content: center;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 4rem 0;
 }
 
 .container-content {
   display: grid;
   place-content: center;
-  grid-template-columns: repeat(1, minmax(0, 0.8fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   grid-auto-rows: max-content;
-}
-.container-content h2 {
-  font-weight: 700;
-  color: #242d52;
+  margin: 0 1rem;
 }
 
-.container-content-about {
-  display: grid;
-  place-content: center;
-  grid-template-columns: repeat(1, minmax(0, 0.91fr));
-  grid-auto-rows: max-content;
-}
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
+  .container-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column: 1/3;
+  }
+}
 .main-section {
   grid-template-rows: repeat(2, minmax(0, 1fr));
   place-items: center;
@@ -332,6 +333,13 @@ body {
   color: #9095a7;
 }
 
+.container-content-about {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-auto-rows: max-content;
+}
+
 .about-points {
   line-height: 162%;
   letter-spacing: -0.01em;
@@ -355,25 +363,62 @@ body {
 .point-title b {
   line-height: 1.5rem;
   color: #242d52;
+  margin-left: 0.5rem;
 }
 
 .numbers {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   background: #f25f3a;
   border-radius: 1.25rem;
   color: #fafafa;
 }
 
+@media screen and (min-width: 768px) {
+  .section-about {
+    margin-top: 0;
+    text-align: start;
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-about {
+    text-align: start;
+    margin-left: 4rem;
+  }
+  .section-about h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .section-about p {
+    padding-right: 6.25rem;
+  }
+
+  .about-point p {
+    margin-left: 4.5rem;
+  }
+
+  .point-title {
+    background: transparent;
+  }
+
+  .container-content-about {
+    margin-right: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-about h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .section-about p {
+    padding-right: 12rem;
+  }
+}
 .card-testimonials {
   display: flex;
   margin-bottom: 1rem;
   margin-top: 3rem;
-}
-
-img {
-  max-width: 70px;
-  width: 100%;
-  height: 100%;
 }
 
 .card-background {
@@ -396,6 +441,11 @@ img {
   margin-right: 0.5rem;
   color: #9095a7;
 }
+.card-text img {
+  max-width: 70px;
+  width: 100%;
+  height: 100%;
+}
 
 .attribution {
   display: none;
@@ -404,6 +454,34 @@ img {
 }
 .attribution a {
   color: #fafafa;
+}
+
+.section-article h1 {
+  font-weight: 700;
+  color: #242d52;
+}
+
+@media screen and (min-width: 768px) {
+  .section-article {
+    grid-column: 1/2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+    text-align: start;
+  }
+
+  .illustration-intro {
+    grid-column: 2/3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-article h1 {
+    font-size: 3.75rem;
+    line-height: 1.15;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

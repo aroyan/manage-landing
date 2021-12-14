@@ -1,5 +1,87 @@
 @use '../abstracts/variables' as v;
 
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.25rem;
+  padding: 2rem 0;
+  background: v.$very-dark-blue;
+
+  a {
+    color: v.$very-light-gray;
+  }
+  span {
+    color: v.$very-light-gray;
+  }
+
+  padding: 2rem 0;
+
+  form {
+    input[type='email'] {
+      height: 44px;
+      width: 240px;
+      margin: 0;
+      padding: 0;
+      border-radius: 22px;
+      &::placeholder {
+        padding-left: 2rem;
+      }
+      &:focus {
+        border: 2px solid v.$bright-red;
+      }
+    }
+    button {
+      width: 80px;
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4rem;
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
 .attribution {
   display: none;
   font-size: 0.75rem;
@@ -7,4 +89,9 @@
   a {
     color: v.$very-light-gray;
   }
+}
+
+.copyright {
+  color: v.$dark-grayish-blue;
+  order: -1;
 }

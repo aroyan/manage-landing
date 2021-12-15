@@ -21,26 +21,37 @@
 }
 
 .menu {
-  display: none;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 6rem;
+  width: 80vw;
+  border-radius: 0.5rem;
+  position: fixed;
+  top: 100px;
+  background: #fff;
   a {
-    margin-right: 1em;
-    &:last-child {
-      margin-right: 0;
-    }
+    color: v.$very-dark-blue;
+    font-weight: 700;
   }
-}
-
-.hamburer {
-  display: inline;
 }
 
 @media screen and (min-width: v.$medium) {
   .menu {
-    display: inline;
+    visibility: visible;
+    flex-direction: row;
+    background: none;
+    position: initial;
+    padding: 0;
+    width: auto;
+    gap: 1rem;
   }
 
   .button-nav {
-    display: inline;
+    display: block;
   }
 
   .hamburger {

@@ -214,26 +214,37 @@ object {
 }
 
 .menu {
-  display: none;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 6rem;
+  width: 80vw;
+  border-radius: 0.5rem;
+  position: fixed;
+  top: 100px;
+  background: #fff;
 }
 .menu a {
-  margin-right: 1em;
-}
-.menu a:last-child {
-  margin-right: 0;
-}
-
-.hamburer {
-  display: inline;
+  color: #1d1e25;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
   .menu {
-    display: inline;
+    visibility: visible;
+    flex-direction: row;
+    background: none;
+    position: initial;
+    padding: 0;
+    width: auto;
+    gap: 1rem;
   }
 
   .button-nav {
-    display: inline;
+    display: block;
   }
 
   .hamburger {

@@ -607,8 +607,8 @@ footer form button {
   gap: 2rem;
 }
 .social-icons img {
-  width: 2rem;
   height: 2rem;
+  width: auto;
 }
 
 .attribution {

@@ -630,7 +630,7 @@ footer form button {
   footer {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     gap: 3.25rem;
     padding: 2rem 0;
@@ -647,6 +647,11 @@ footer form button {
 
   .col-1-desktop {
     gap: 5.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav-footer {
+    gap: 8rem;
   }
 }
 

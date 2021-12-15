@@ -1,10 +1,9 @@
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('testnav');
+const menu = document.getElementById('menu');
 
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('show');
-});
-
-function ohhh() {
-  menu.classList.toggle('show');
+function toggleMenu() {
+  if (menu.style.visibility === 'hidden') {
+    menu.style.visibility = 'visible';
+  } else {
+    menu.style.visibility = 'hidden';
+  }
 }

@@ -21,8 +21,6 @@
         <img src="./images/logo.svg" alt="logo">
       </div>
 
-
-
       <div class="menu" id="menu">
         <a href="#pricing">Pricing</a>
         <a href="#product">Product</a>
@@ -131,98 +129,129 @@
 
 
       <section class="container-content text-center">
-        <h2>
+        <h2 class="testimonial-title">
           What they’ve said
         </h2>
 
-        <div class="card-testimonials">
 
-          <div class="card-background">
+        <div class="slideshow-container-main">
+          <div class="slideshow-container">
 
-            <div class="card-text">
+            <div class="mySlides fade">
 
-              <img src="./images/avatar-anisha.png" alt="Avatar Anisha">
+              <div class="card-testimonials">
 
-              <b>
-                Anisha Li
-              </b>
+                <div class="card-background">
 
-              <p>
-                “Manage has supercharged our team’s workflow. The ability to maintain
-                visibility on larger milestones at all times keeps everyone motivated.”
-              </p>
+                  <div class="card-text">
 
-            </div>
+                    <img src="./images/avatar-anisha.png" alt="Avatar Anisha">
 
-          </div>
+                    <b>
+                      Anisha Li
+                    </b>
 
-        </div>
+                    <p>
+                      “Manage has supercharged our team’s workflow. The ability to maintain
+                      visibility on larger milestones at all times keeps everyone motivated.”
+                    </p>
 
-        <div class="card-testimonials">
+                  </div>
 
-          <div class="card-background">
+                </div>
 
-            <div class="card-text">
-              <img src="images/avatar-ali.png" alt="Avatar Ali">
-              <b>
-                Ali Bravo
-              </b>
-
-              <p>
-                “We have been able to cancel so many other subscriptions since using
-                Manage. There is no more cross-channel confusion and everyone is much
-                more focused.”
-              </p>
+              </div>
 
             </div>
 
-          </div>
+            <div class="mySlides fade">
 
-        </div>
+              <div class="card-testimonials">
 
-        <div class="card-testimonials">
+                <div class="card-background">
 
-          <div class="card-background">
+                  <div class="card-text">
+                    <img src="images/avatar-ali.png" alt="Avatar Ali">
+                    <b>
+                      Ali Bravo
+                    </b>
 
-            <div class="card-text">
+                    <p>
+                      “We have been able to cancel so many other subscriptions since using
+                      Manage. There is no more cross-channel confusion and everyone is much
+                      more focused.”
+                    </p>
 
-              <img src="images/avatar-richard.png" alt="Avatar Richard">
-              <b>
-                Richard Watts
-              </b>
+                  </div>
 
-              <p>
-                “Manage allows us to provide structure and process. It keeps us organized
-                and focused. I can't stop recommending them to everyone I talk to!”
-              </p>
+                </div>
 
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="card-testimonials">
-
-          <div class="card-background">
-
-            <div class="card-text">
-
-              <img src="images/avatar-shanai.png" alt="Avatar Shanai">
-
-              <b>
-                Shanai Gough
-              </b>
-
-              <p>
-                “Their software allows us to track, manage and collaborate on our projects
-                from anywhere. It keeps the whole team in-sync without being intrusive.”
-              </p>
+              </div>
 
             </div>
 
+            <div class="mySlides fade">
+
+              <div class="card-testimonials">
+
+                <div class="card-background">
+
+                  <div class="card-text">
+
+                    <img src="images/avatar-richard.png" alt="Avatar Richard">
+                    <b>
+                      Richard Watts
+                    </b>
+
+                    <p>
+                      “Manage allows us to provide structure and process. It keeps us organized
+                      and focused. I can't stop recommending them to everyone I talk to!”
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="card-testimonials">
+
+                <div class="card-background">
+
+                  <div class="card-text">
+
+                    <img src="images/avatar-shanai.png" alt="Avatar Shanai">
+
+                    <b>
+                      Shanai Gough
+                    </b>
+
+                    <p>
+                      “Their software allows us to track, manage and collaborate on our projects
+                      from anywhere. It keeps the whole team in-sync without being intrusive.”
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <br>
+
           </div>
 
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </div>
 
         <div class="button-testimonial">
@@ -304,6 +333,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Aroyan</a>.
   </div>
+
 
   <script src="script.js"></script>
 </body>

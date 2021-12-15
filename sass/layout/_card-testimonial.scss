@@ -33,5 +33,21 @@
 }
 
 .button-testimonial {
-  margin: 0 auto;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: v.$medium) {
+  .container-content {
+    > .testimonial-title {
+      grid-column: 1 / span 3;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    > .slideshow-container-main {
+      grid-column: 1 / span 3;
+    }
+    > .button-testimonial {
+      grid-column: 1 / span 3;
+    }
+  }
 }

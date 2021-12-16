@@ -93,9 +93,17 @@ footer {
 }
 
 .attribution {
-  display: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  padding: 1rem 0;
   font-size: 0.75rem;
   text-align: center;
+  gap: 1rem;
+  background: v.$very-dark-blue;
+  color: v.$very-light-gray;
   a {
     color: v.$very-light-gray;
   }

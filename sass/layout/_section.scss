@@ -45,3 +45,11 @@
     color: v.$dark-grayish-blue;
   }
 }
+
+@media screen and (min-width: v.$huge) {
+  .section-article {
+    p {
+      margin-right: 14rem;
+    }
+  }
+}

@@ -27,6 +27,15 @@
 @media screen and (min-width: v.$large) {
   .section-article {
     h1 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media screen and (min-width: v.$huge) {
+  .section-article {
+    h1 {
       font-size: 3.75rem;
       line-height: 1.15;
     }

@@ -270,8 +270,8 @@ object {
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
-  color: white;
+  margin-top: -50px;
+  color: #000;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -285,10 +285,16 @@ object {
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  left: 0;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Caption text */
@@ -453,6 +459,11 @@ body {
   color: #9095a7;
 }
 
+@media screen and (min-width: 1440px) {
+  .section-article p {
+    margin-right: 14rem;
+  }
+}
 .container-content-about {
   display: grid;
   place-content: center;
@@ -609,6 +620,12 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .section-article h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-article h1 {
     font-size: 3.75rem;
     line-height: 1.15;
   }
@@ -735,9 +752,17 @@ footer form button {
 }
 
 .attribution {
-  display: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  padding: 1rem 0;
   font-size: 0.75rem;
   text-align: center;
+  gap: 1rem;
+  background: #1d1e25;
+  color: #fafafa;
 }
 .attribution a {
   color: #fafafa;

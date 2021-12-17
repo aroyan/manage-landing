@@ -459,11 +459,6 @@ body {
   color: #9095a7;
 }
 
-@media screen and (min-width: 1024px) {
-  .section-article p {
-    margin-right: 5rem;
-  }
-}
 @media screen and (min-width: 1440px) {
   .section-article p {
     margin-right: 14rem;

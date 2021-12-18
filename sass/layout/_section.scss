@@ -46,6 +46,14 @@
   }
 }
 
+@media screen and (min-width: v.$large) {
+  .section-article {
+    p {
+      margin-right: 8rem;
+    }
+  }
+}
+
 @media screen and (min-width: v.$huge) {
   .section-article {
     p {

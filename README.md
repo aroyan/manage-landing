@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/manage-landing-page-using-sass-G3Z1rJqfH)
 - Live Site URL: [Manage Landing Page](https://aroyan.github.io/manage-landing/)
 
 ## My process
